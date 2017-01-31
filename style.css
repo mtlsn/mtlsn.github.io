@@ -1,7 +1,7 @@
 body{
 	font-family: "Fjalla One";
 	font-size:18pt;
-	line-height:30pt;
+	line-height:27pt;
 }
 
 br{
@@ -12,7 +12,7 @@ br{
 
 #wrapper {
 	width:50%;
-	max-width:700px;
+	max-width:900px;
 	min-width: 300px; 
 	margin: 0 auto;
 }
