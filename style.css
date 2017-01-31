@@ -1,3 +1,9 @@
+body{
+	font-family: "Fjalla One";
+	font-size:18pt;
+	line-height:30pt;
+}
+
 br{
 	content: " ";
 	margin-bottom: 1.5em;
