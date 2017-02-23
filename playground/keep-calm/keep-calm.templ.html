@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is the title of the page - what's written will appear at the top of the browser window -->
+    <title>Keep Calm and Carry On</title>
+
+    <!-- This links to the stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="css/keep-calm.css">
+  </head>
+
+  <body>
+    
+    <!--
+          A component should have a name and has a class "component-<name>"
+          In this example we have three components: "keep-calm", "button" and "my-edit"
+        
+          If the innerHTML of a node should be set dynamically the node has to have 
+          the data-contentid attribute set to a unique identifier (in the scope of the component)
+
+    -->
+    <div class="component-keep-calm fillscreen">
+      <img id="crown" src="img/crown.svg" width="125">
+      <div id="text">
+        <ul>
+          <li data-contentid="text-before"> Keep CAlm </li>
+          <li><span>and</span></li>
+          <li data-contentid="text-after"> Carry On</li>
+        </ul>
+      </div>
+      
+      <a class="component-button" id="edit-button">edit</a>
+    </div>
+    
+
+    <div class="component-my-edit">
+      <a class="component-button" id="close-button"> X </a>  
+      <div id="wrapper">
+        <!--
+
+        Input elements should have an attribute data-inputid set to a unique identifier
+        (in the scope of the component)
+
+        -->
+        <label>Text before AND </label><br>
+        <input class="state-normal" type="text" data-inputid="before"><br>
+        <label>Text after AND </label><br>
+        <input class="state-normal" type="text" data-inputid="after"><br>
+        <br>
+      </div>
+      <div style="text-align:center;width:85%;">
+        <a class="component-button" id="set-button"> set </a>  
+      </div>
+  
+      <div class="use-component-keyboard"> 
+          *the whole outerHTML will be replaced by the app-engine*
+      </div>
+    </div>
+
+  </body>
+</html>
+

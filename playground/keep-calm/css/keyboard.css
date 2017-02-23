@@ -1,0 +1,48 @@
+/* These styles describe only the component itself 
+ * Layout of the application is in the styles.css */
+
+.component-keyboard {
+    background: rgba(36,36,36,0.6);
+    padding:1em;
+    font-size: 24pt;
+    font-family: Verdana, Arial, sans;
+    width:28em;
+}
+
+.component-keyboard .key {
+    display:inline-block;
+    color: white;
+    text-decoration:none;
+    text-align:center;
+    line-height:96%;
+
+    height:1.5em;
+    width:2em;
+    padding-top: 0.5em;
+    
+    border: 1px solid rgba(128,128,128,0.5);
+    margin: 0.1em;
+    border-radius: 5px;
+    background: linear-gradient(#666,#445); 
+/* background: rgba(200,200,200,0.1); */
+}
+
+.component-keyboard .key.space {
+    width:6.57em;
+}
+
+.component-keyboard .key:hover{
+    color: #77f;
+    border-color: rgba(128,128,255,0.8);
+}
+
+.component-keyboard .key:active{
+    color: #77f;
+    background:rgba(200,200,200,0.4);
+    border-color: rgba(128,128,255,0.8);
+}
+
+.component-keyboard .keyboard-line{
+
+}
+

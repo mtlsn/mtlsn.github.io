@@ -1,0 +1,130 @@
+body {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  padding: 0;
+}
+
+.fillscreen{
+  position: absolute !important;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+}
+
+/* 
+        Components
+*/
+
+/*  The selectors may not refer to parent nodes of the component  */
+
+.component-keep-calm {
+  text-align: center;
+  min-width: 200px;
+  padding: 30px;
+  border: 4px double white;
+  background-color: darkred;
+}
+
+.component-keep-calm #text{
+  font-size: 50pt;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.component-keep-calm #text span {
+  font-size: 50%;
+  line-height: 270%;
+  font-weight: bold;
+}
+
+.component-keep-calm #text ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* If a component has a special state e.g. "active"
+   define a class "state-<identifier-of-a-state> e.g. "state-active" */
+
+.component-keep-calm.state-background #crown{
+  filter: drop-shadow(0 0 17px gold);
+}
+
+.component-keep-calm.state-background #edit-button{
+  display:none;
+}
+
+.component-keep-calm.state-background #text{
+  opacity: 0.6;
+  filter: blur(5px);
+}
+
+/* A button component */
+
+.component-button{
+  display: inline-block;
+  padding: 1em;
+  margin: 1.3em;
+  border: 1px solid white;
+  cursor:pointer;
+  border-radius: 2px;
+}
+
+.component-button:hover{
+  background: rgba(0,255,255,0.5);
+  border: 1px solid rgba(0,255,255,1);
+}
+
+/* A popup dialog component */
+
+.component-my-edit {
+  position:relative;
+  z-index: 10;
+  
+  width:66vw;
+  top:200px;
+  margin: 0 auto;
+  padding-left: 10%;
+  
+  border: solid 6px rgba(0,155,255,0.2);
+  background: rgba(120,120,130,0.5);
+}
+
+.component-my-edit #wrapper{
+  margin-top:70px;
+  width:85%;
+}
+
+
+.component-my-edit input[type=text] {
+  padding: 0.2em;
+  width: 100%;
+  margin: 0.4em auto;
+  font-size: 20pt;
+  margin-bottom: 2em;
+  border:2px solid grey;
+  border-radius:3px;  
+}
+
+.component-my-edit input[type=text].state-focused {
+  border:2px solid cyan;
+  background:lightyellow;
+  box-shadow: 0px 0px 17px 2px rgba(0,120,200,0.7);
+}
+
+.component-my-edit #close-button{
+  position: absolute;
+  top:0;
+  right:0;
+  background:red;
+}
+
+.component-my-edit .component-keyboard{
+    position:relative;
+    left:3em;
+    width:25em;
+}
+
+
